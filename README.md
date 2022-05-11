@@ -4,7 +4,7 @@
 This design system is to help build UI components faster and keep the design consistent throughout the application. The goal of this system is to make our components modular and easy to maintain.
 
 
-<details>
+<details open>
   <summary><em>Table of Contents</em></summary>
   <ol>
    <li>
@@ -18,14 +18,14 @@ This design system is to help build UI components faster and keep the design con
       </ul>
     </li>
     <li><a href="#shadows">Shadows</a></li>
-    <li><a href="#Border radius">Border radius</a></li>
-    <li><a href="#Flex box">Flex box</a></li>
-    <li><a href="#Grid">Grid</a></li>
-    <li><a href="#Margin">Margin</a></li>
-    <li><a href="#Padding">Padding</a></li>
-    <li><a href="#Typography">Typography</a></li>
-    <li><a href="#Animation">Animation</a></li>
-    <li><a href="#Containers">Containers</a></li>
+    <li><a href="#border radius">Border radius</a></li>
+    <li><a href="#flex box">Flex box</a></li>
+    <li><a href="#grid">Grid</a></li>
+    <li><a href="#margin">Margin</a></li>
+    <li><a href="#padding">Padding</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#animations">Animation</a></li>
+    <li><a href="#containers">Containers</a></li>
   </ol>
 </details>
 
