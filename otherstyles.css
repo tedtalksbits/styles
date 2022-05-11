@@ -1,0 +1,12 @@
+header{
+   min-block-size: 50vh;
+}
+section{
+   min-block-size: 50vh;
+}
+
+img{
+   object-fit: cover;
+   height: 400px;
+   width: 400px;
+}
