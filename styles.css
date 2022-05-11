@@ -4,13 +4,28 @@
    ========================================
 */
 :root{
-   /* sizes */
+   /* box model
+       sizes 
+   */
    --xs: 0.15rem;
    --s: 0.25rem;
    --m: 0.5rem;
    --l: 0.75rem;
    --xl: 1rem;
    --xxl: 1.5rem;
+   /* 
+      Font 
+      sizes
+   */
+
+   --font-xs: 0.75rem;
+   --font-s: 0.875rem;
+   --font-m: 1rem;
+   --font-l: 1.125rem;
+   --font-xl: 1.25rem;
+   --font-xxl: 1.5rem;
+   --font-xxxl: clamp(2rem, 8vw, 5rem);
+
    /* colors */
    --black-alpha-50: rgba(0, 0, 0, 0.04);
    --black-alpha-100: rgba(0, 0, 0, 0.06);
@@ -241,8 +256,12 @@ html{
    box-shadow: var(--shadow-xxl);
 }
 
-/* flex */
+/* xx */
 .flex-v {
+   display: flex;
+   flex-direction: column;
+}
+.flex-column {
    display: flex;
    flex-direction: column;
 }
@@ -604,7 +623,7 @@ html{
    background-color: var(--grey-100);
 }
 .bg-grey-200{
-   background-color: var(--grey-50);
+   background-color: var(--grey-200);
 }
 .bg-grey-300{
    background-color: var(--grey-300);
@@ -627,11 +646,14 @@ html{
 .bg-grey-900{
    background-color: var(--grey-900);
 }
+.bg-blue-50{
+   background-color: var(--blue-50);
+}
 .bg-blue-100{
    background-color: var(--blue-100);
 }
 .bg-blue-200{
-   background-color: var(--blue-50);
+   background-color: var(--blue-200);
 }
 .bg-blue-300{
    background-color: var(--blue-300);
@@ -655,10 +677,13 @@ html{
    background-color: var(--blue-900);
 }
 .bg-red-100{
+   background-color: var(--red-50);
+}
+.bg-red-100{
    background-color: var(--red-100);
 }
 .bg-red-200{
-   background-color: var(--red-50);
+   background-color: var(--red-200);
 }
 .bg-red-300{
    background-color: var(--red-300);
@@ -682,10 +707,13 @@ html{
    background-color: var(--red-900);
 }
 .bg-teal-100{
+   background-color: var(--teal-50);
+}
+.bg-teal-100{
    background-color: var(--teal-100);
 }
 .bg-teal-200{
-   background-color: var(--teal-50);
+   background-color: var(--teal-200);
 }
 .bg-teal-300{
    background-color: var(--teal-300);
@@ -709,10 +737,13 @@ html{
    background-color: var(--teal-900);
 }
 .bg-green-100{
+   background-color: var(--green-50);
+}
+.bg-green-100{
    background-color: var(--green-100);
 }
 .bg-green-200{
-   background-color: var(--green-50);
+   background-color: var(--green-200);
 }
 .bg-green-300{
    background-color: var(--green-300);
@@ -736,10 +767,13 @@ html{
    background-color: var(--green-900);
 }
 .bg-orange-100{
+   background-color: var(--orange-50);
+}
+.bg-orange-100{
    background-color: var(--orange-100);
 }
 .bg-orange-200{
-   background-color: var(--orange-50);
+   background-color: var(--orange-200);
 }
 .bg-orange-300{
    background-color: var(--orange-300);
@@ -762,11 +796,14 @@ html{
 .bg-orange-900{
    background-color: var(--orange-900);
 }
+.bg-purple-50{
+   background-color: var(--purple-50);
+}
 .bg-purple-100{
    background-color: var(--purple-100);
 }
 .bg-purple-200{
-   background-color: var(--purple-50);
+   background-color: var(--purple-200);
 }
 .bg-purple-300{
    background-color: var(--purple-300);
@@ -789,11 +826,14 @@ html{
 .bg-purple-900{
    background-color: var(--purple-900);
 }
+.bg-yellow-50{
+   background-color: var(--yellow-50);
+}
 .bg-yellow-100{
    background-color: var(--yellow-100);
 }
 .bg-yellow-200{
-   background-color: var(--yellow-50);
+   background-color: var(--yellow-200);
 }
 .bg-yellow-300{
    background-color: var(--yellow-300);
@@ -816,11 +856,14 @@ html{
 .bg-yellow-900{
    background-color: var(--yellow-900);
 }
+.bg-cyan-50{
+   background-color: var(--cyan-50);
+}
 .bg-cyan-100{
    background-color: var(--cyan-100);
 }
 .bg-cyan-200{
-   background-color: var(--cyan-50);
+   background-color: var(--cyan-200);
 }
 .bg-cyan-300{
    background-color: var(--cyan-300);
@@ -844,10 +887,13 @@ html{
    background-color: var(--cyan-900);
 }
 .bg-pink-100{
+   background-color: var(--pink-50);
+}
+.bg-pink-100{
    background-color: var(--pink-100);
 }
 .bg-pink-200{
-   background-color: var(--pink-50);
+   background-color: var(--pink-200);
 }
 .bg-pink-300{
    background-color: var(--pink-300);
@@ -938,7 +984,7 @@ html{
    color: var(--grey-100);
 }
 .grey-200{
-   color: var(--grey-50);
+   color: var(--grey-200);
 }
 .grey-300{
    color: var(--grey-300);
@@ -962,10 +1008,13 @@ html{
    color: var(--grey-900);
 }
 .blue-100{
+   color: var(--blue-50);
+}
+.blue-100{
    color: var(--blue-100);
 }
 .blue-200{
-   color: var(--blue-50);
+   color: var(--blue-200);
 }
 .blue-300{
    color: var(--blue-300);
@@ -989,10 +1038,13 @@ html{
    color: var(--blue-900);
 }
 .red-100{
+   color: var(--red-50);
+}
+.red-100{
    color: var(--red-100);
 }
 .red-200{
-   color: var(--red-50);
+   color: var(--red-200);
 }
 .red-300{
    color: var(--red-300);
@@ -1016,10 +1068,13 @@ html{
    color: var(--red-900);
 }
 .teal-100{
+   color: var(--teal-50);
+}
+.teal-100{
    color: var(--teal-100);
 }
 .teal-200{
-   color: var(--teal-50);
+   color: var(--teal-200);
 }
 .teal-300{
    color: var(--teal-300);
@@ -1043,10 +1098,13 @@ html{
    color: var(--teal-900);
 }
 .green-100{
+   color: var(--green-50);
+}
+.green-100{
    color: var(--green-100);
 }
 .green-200{
-   color: var(--green-50);
+   color: var(--green-200);
 }
 .green-300{
    color: var(--green-300);
@@ -1069,11 +1127,14 @@ html{
 .green-900{
    color: var(--green-900);
 }
+.orange-50{
+   color: var(--orange-100);
+}
 .orange-100{
    color: var(--orange-100);
 }
 .orange-200{
-   color: var(--orange-50);
+   color: var(--orange-200);
 }
 .orange-300{
    color: var(--orange-300);
@@ -1097,10 +1158,13 @@ html{
    color: var(--orange-900);
 }
 .purple-100{
+   color: var(--purple-50);
+}
+.purple-100{
    color: var(--purple-100);
 }
 .purple-200{
-   color: var(--purple-50);
+   color: var(--purple-200);
 }
 .purple-300{
    color: var(--purple-300);
@@ -1124,10 +1188,13 @@ html{
    color: var(--purple-900);
 }
 .yellow-100{
+   color: var(--yellow-50);
+}
+.yellow-100{
    color: var(--yellow-100);
 }
 .yellow-200{
-   color: var(--yellow-50);
+   color: var(--yellow-200);
 }
 .yellow-300{
    color: var(--yellow-300);
@@ -1151,10 +1218,13 @@ html{
    color: var(--yellow-900);
 }
 .cyan-100{
+   color: var(--cyan-50);
+}
+.cyan-100{
    color: var(--cyan-100);
 }
 .cyan-200{
-   color: var(--cyan-50);
+   color: var(--cyan-200);
 }
 .cyan-300{
    color: var(--cyan-300);
@@ -1177,11 +1247,14 @@ html{
 .cyan-900{
    color: var(--cyan-900);
 }
+.pink-50{
+   color: var(--pink-100);
+}
 .pink-100{
    color: var(--pink-100);
 }
 .pink-200{
-   color: var(--pink-50);
+   color: var(--pink-200);
 }
 .pink-300{
    color: var(--pink-300);
@@ -1215,7 +1288,27 @@ html{
 .underline{
    text-decoration: underline;
 }
-
+.font-xs{
+   font-size: var(--font-xs);
+}
+.font-s{
+   font-size: var(--font-s);
+}
+.font-m{
+   font-size: var(--font-m);
+}
+.font-l{
+   font-size: var(--font-l);
+}
+.font-xl{
+   font-size: var(--font-xl);
+}
+.font-xxl{
+   font-size: var(--font-xxl);
+}
+.font-xxxl{
+   font-size: var(--font-xxxl);
+}
 /* animation */
 .animateOut {
    animation: animateOut 1s ease forwards;
@@ -1230,13 +1323,13 @@ html{
    transform: translateY(-150px);
 }
 
-.delay-1 {
+.delay-1s {
    animation-delay: 1s;
 }
-.delay-2 {
+.delay-2s {
    animation-delay: 2s;
 }
-.delay-3 {
+.delay-3s {
    animation-delay: 3s;
 }
 @keyframes animateOut {
@@ -1260,5 +1353,20 @@ html{
    }
 }
 
+.content-wrapper{
+   display: grid;
+   grid-template-columns: 1fr min(99ch, 100%) 1fr;
+}
+.content-wrapper > *{
+   grid-column: 2;
+}
+.full-bleed {
+   width:100%;
+   grid-column: 1 / 4;
+}
 
+.w{
+   width: min(99ch);
+   margin-inline: auto;
+}
 
