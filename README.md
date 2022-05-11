@@ -18,8 +18,8 @@ This design system is to help build UI components faster and keep the design con
       </ul>
     </li>
     <li><a href="#shadows">Shadows</a></li>
-    <li><a href="#border radius">Border radius</a></li>
-    <li><a href="#flex box">Flex box</a></li>
+    <li><a href="#border-radius">Border radius</a></li>
+    <li><a href="#flex-box">Flex box</a></li>
     <li><a href="#grid">Grid</a></li>
     <li><a href="#margin">Margin</a></li>
     <li><a href="#padding">Padding</a></li>
