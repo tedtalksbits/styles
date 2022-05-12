@@ -2,11 +2,16 @@ header{
    min-block-size: 50vh;
 }
 section{
-   min-block-size: 50vh;
+   min-block-size: 100vh;
+   margin-inline: var(--xl);
 }
 
 img{
    object-fit: cover;
-   height: 400px;
-   width: 400px;
+   height: 500px;
+   width: 100%;
+}
+a{
+   text-decoration: none;
+   display: block;
 }
