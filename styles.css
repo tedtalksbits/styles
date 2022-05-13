@@ -1362,6 +1362,77 @@ html{
 .bg-gradient-900{
    background: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
 }
+.txt-gradient-50{
+   background: linear-gradient(90deg, #cfd9df 0%, #e2ebf0 100%);
+    -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-box-decoration-break: clone;
+}
+.txt-gradient-100{
+   background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 100%);
+    -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-box-decoration-break: clone;
+}
+.txt-gradient-200{
+   background: linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
+    -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-box-decoration-break: clone;
+}
+.txt-gradient-300{
+   background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+    -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-box-decoration-break: clone;
+}
+.txt-gradient-400{
+   background: linear-gradient(90deg, #0cebeb 0%, #20e3b2 50%, #29ffc6 100%);
+    -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-box-decoration-break: clone;
+}
+.txt-gradient-500{
+   background: linear-gradient(90deg, #ff9966 0%, #ff5e62 100%);
+    -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-box-decoration-break: clone;
+}
+.txt-gradient-600{
+   background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-box-decoration-break: clone;
+}
+.txt-gradient-700{
+   background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-box-decoration-break: clone;
+}
+.txt-gradient-800{
+   background: linear-gradient(90deg, #00f260 0%, #0575e6 100%);
+    -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-box-decoration-break: clone;
+}
+.txt-gradient-900{
+   background: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-box-decoration-break: clone;
+}
+
 /* images */
 
 @media screen and (max-width: 768px){
