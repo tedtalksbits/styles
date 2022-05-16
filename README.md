@@ -64,13 +64,17 @@ This design system is to help build UI components faster and keep the design con
          <td>--xxl</td>
          <td>1.5rem</td>
       </tr>
+      <tr>
+         <td>--xxxl</td>
+         <td>2.5rem</td>
+      </tr>
    </tbody>
 </table>
 
 ### Size Range
 
 
-The range starts at **xs** which is the smallest value and ends at **xxl** which is the largest value.
+The range starts at **xs** which is the smallest value and ends at **xxxl** which is the largest value.
 
 ### Uses
 use as a **varaible**
@@ -86,7 +90,7 @@ _⚠ Use **margin** helper classes instead_
 
 ---
 
-# Colors
+# Colors And Gradients
 
 ### Main Colors and Shades 
 - Grey
@@ -99,7 +103,7 @@ _⚠ Use **margin** helper classes instead_
 - Yellow
 - Teal
 - Green
-
+- Gradient
 ### Color Range
 
 The last number at the end of a color class/variable is the range.
@@ -115,22 +119,26 @@ use as a **varaible**
 ```css
 .my-element{
    background: var(--blue-500);
+   background: var(--gradient-500);
 }
 ```
 use as a **class**
 ```html
 <div class="bg-blue-500"></div>
+<div class="bg-gradient-500"></div>
 ```
 ### Uses (Color)
 use as a **varaible**
 ```css
 h1{
   color : var(--blue-500);
+  color : var(--txt-gradient-500);
 }
 ```
 use as a **class**
 ```html
 <h1 class="blue-500"></h1>
+<h1 class="txt-gradient-500"></h1>
 ```
 
 ---
@@ -141,7 +149,7 @@ use as a **class**
 
 The range starts at **xs** which is the lightest value and ends at **xxl** which is the darkest value.
 Lighter ⏭ Darker
-shadow-**xs** - shadow-**xxl**
+shadow-**xs** - shadow-**xxxl**
 
 ### Uses
 use as a **varaible** (_not recommended_)
@@ -163,7 +171,7 @@ use as a **class**
 
 The range starts at **xs** which is the smallest value and ends at **xxl** which is the largest value.
 
-rounded-**xs** ⏭ rounded-**xxl**
+rounded-**xs** ⏭ rounded-**xxxl**
 
 ### Uses
 use as a **varaible** (_not recommended_)
@@ -238,7 +246,7 @@ Options:
 
 The range starts at **xs** which is the smallest value and ends at **xxl** which is the largest value.
 
-gap-**xs** ⏭ gap-**xxl**
+gap-**xs** ⏭ gap-**xxxl**
 
 use as a **varaible** (_not recommended_)
 ```css
@@ -260,7 +268,7 @@ use as a **class**
 
 The range starts at **xs** which is the smallest value and ends at **xxl** which is the largest value.
 
-m-**xs** ⏭ m-**xxl**
+m-**xs** ⏭ m-**xxxl**
 
 ### Uses
 use as a **varaible** (_not recommended_)
@@ -325,7 +333,7 @@ use as a **class**
 
 The range starts at **xs** which is the smallest value and ends at **xxl** which is the largest value.
 
-m-**xs** ⏭ m-**xxl**
+m-**xs** ⏭ m-**xxxl**
 
 ### Uses
 use as a **varaible** (_not recommended_)
@@ -432,7 +440,7 @@ use as a **class**
 
 The range starts at **xs** which is the smallest value and ends at **xxl** which is the largest value.
 
-m-**xs** ⏭ m-**xxl**
+m-**xs** ⏭ m-**xxxl**
 
 ### Uses
 use as a **varaible** (_not recommended_)
@@ -463,13 +471,40 @@ use as a **class**
 <p class="animateIn">I will fade in from top</p>
 
 ```
-# Containers
+# Containers and Wrappers
 
-### Uses
+### .content-wrapper
 
 use as a **class**
 ```html
-<section class="container"></section>
+<section class="content-wrapper"></section>
+<!-- Grid wrapper class for content. 
+This class adds a min-max width contraint on its children elements. 
+The maximum width is 99ch units or 100% on smaller screens -->
+
+```
+#### _.full-bleed_
+
+use as a **class**
+```html
+<section class="content-wrapper">
+   <section class="full-bleed">I will be the full width of the screen</section>
+   <section >I will be the full width of the screen only on mobile</section>
+</section>
+<!-- For content that should span the entire width of the screen while being a child of the content-wrapper, use the class full-bleed. 
+
+```
+
+
+### .content-container
+
+use as a **class**
+```html
+<section class="content-container"></section>
+<!-- container class for content with similarities to .content-wrapper. 
+This class adds a min width contraint on its children elements. 
+And uses margin: auto to position children elements in the center of the screen 
+The maximum width is 99ch units  -->
 
 ```
 
