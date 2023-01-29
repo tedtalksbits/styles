@@ -3131,6 +3131,14 @@ i.icon-trash::after {
    width: var(--width-full);
 }
 
+.w-100vw {
+   width: 100vw;
+}
+
+.w-100 {
+   width: var(--width-full);
+}
+
 .w-fit-content {
    width: fit-content;
 }
@@ -3168,6 +3176,14 @@ i.icon-trash::after {
 }
 
 .h-full {
+   height: var(--height-full);
+}
+
+.h-100vh {
+   height: 100vh;
+}
+
+.h-100 {
    height: var(--height-full);
 }
 
