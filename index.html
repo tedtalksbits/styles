@@ -80,15 +80,19 @@
                     </div>
                 </div>
             </section>
-            <section class="bg-white">
-                <h1 class="font-xxxl txt-white center">Components</h1>
+            <section class="bg-white flex-v gap-lg grey-900">
+                <h1 class="font-xxxl center">Components</h1>
+                <div class="rounded-md bg-grey-50 p-lg w-half mx-auto">
+                    <h3 class="font-lg mb-xl">Switch</h3>
 
-                <h3 class="font-lg">Switch</h3>
+                    <label
+                        for="switch"
+                        class="switch mb-lg"
+                        data-component="switch"
+                    >
+                        <input type="checkbox" class="switch" />
+                    </label>
 
-                <label for="switch" class="switch" data-component="switch">
-                    <input type="checkbox" class="switch" />
-                </label>
-                <div class="div">
                     <label
                         for="switch"
                         class="switch"
@@ -98,6 +102,45 @@
                         data-position="right"
                     >
                         <input type="checkbox" class="switch" checked />
+                    </label>
+                </div>
+                <div class="rounded-md bg-grey-50 p-lg w-half mx-auto">
+                    <h3 class="font-lg mb-xl">Custom Radio</h3>
+
+                    <p class="mb-lg">Select an option</p>
+                    <label for="itemOne" class="mb-md">
+                        <input
+                            type="radio"
+                            id="itemOne"
+                            name="radios"
+                            value="itemOne"
+                            class="radio-input"
+                            data-component="custom-radio"
+                            checked
+                        />
+                        <div class="radio-content">Item One</div>
+                    </label>
+                    <label for="itemTwo" class="mb-md">
+                        <input
+                            type="radio"
+                            id="itemTwo"
+                            name="radios"
+                            value="itemTwo"
+                            class="radio-input"
+                            data-component="custom-radio"
+                        />
+                        <div class="radio-content">Item Two</div>
+                    </label>
+                    <label for="itemThree" class="mb-md">
+                        <input
+                            type="radio"
+                            id="itemThree"
+                            name="radios"
+                            value="itemThree"
+                            class="radio-input"
+                            data-component="custom-radio"
+                        />
+                        <div class="radio-content">Item Three</div>
                     </label>
                 </div>
             </section>
