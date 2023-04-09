@@ -523,6 +523,14 @@ input[type="email"],
 input[type="number"],
 input[type="tel"],
 input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="url"],
+input[type="color"],
+input[type="datetime"],
+
 select,
 textarea {
    border: 1px solid var(--border-color);
